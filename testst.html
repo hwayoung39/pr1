@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>testst</title>
+    <script language="javascript">
+    function check(){
+        var form = document.test;
+        if((form.firstmeet[0].checked == true)&&(form.servant[0].checked == true)&&(form.travel[0].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "intp.html";
+        }
+        
+        else if((form.firstmeet[0].checked == true)&&(form.servant[0].checked == true)&&(form.travel[0].checked == true)&&(form.choice[1].checked == true)){
+            
+            form.action = "infp.html";
+        }
+
+        else if((form.firstmeet[0].checked == true)&&(form.servant[0].checked == true)&&(form.travel[1].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "intj.html";
+        }
+
+        else if((form.firstmeet[0].checked == true)&&(form.servant[0].checked == true)&&(form.travel[1].checked == true)&&(form.choice[1].checked == true)){
+            
+            form.action = "infj.html";
+        }
+
+        else if((form.firstmeet[0].checked == true)&&(form.servant[1].checked == true)&&(form.travel[0].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "istp.html";
+        }
+
+        else if((form.firstmeet[0].checked == true)&&(form.servant[1].checked == true)&&(form.travel[0].checked == true)&&(form.choice[1].checked == true)){
+            
+            form.action = "isfp.html";
+        }
+
+        else if((form.firstmeet[0].checked == true)&&(form.servant[1].checked == true)&&(form.travel[1].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "istj.html";
+        }
+
+        else if((form.firstmeet[0].checked == true)&&(form.servant[1].checked == true)&&(form.travel[1].checked == true)&&(form.choice[1].checked == true)){
+
+            form.action = "isfj.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[0].checked == true)&&(form.travel[0].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "entp.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[0].checked == true)&&(form.travel[0].checked == true)&&(form.choice[1].checked == true)){
+
+            form.action = "enfp.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[0].checked == true)&&(form.travel[1].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "entj.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[0].checked == true)&&(form.travel[1].checked == true)&&(form.choice[1].checked == true)){
+
+            form.action = "enfj.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[1].checked == true)&&(form.travel[0].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "estp.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[1].checked == true)&&(form.travel[0].checked == true)&&(form.choice[1].checked == true)){
+
+            form.action = "esfp.html";
+        }
+        
+        else if((form.firstmeet[1].checked == true)&&(form.servant[1].checked == true)&&(form.travel[1].checked == true)&&(form.choice[0].checked == true)){
+
+            form.action = "estj.html";
+        }
+
+        else if((form.firstmeet[1].checked == true)&&(form.servant[1].checked == true)&&(form.travel[1].checked == true)&&(form.choice[1].checked == true)){
+
+            form.action = "esfj.html";
+        }
+
+        else{
+
+            alert("test를 확인하세요!")
+        }
+
+        form.submit();
+    }
+    </script>
+    <style>
+        a{
+            color:black;
+            text-decoration: none;
+        }
+        body{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
+        .q{
+           font-size: 20px;
+           color: darkgreen;
+           font-weight: bolder;
+        }
+        #end{
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px gray;
+        }
+    </style>
+</head>
+<body>
+    <form name="test" method="post">
+        <h3>TEST</h3>
+        
+        <p class="q">1. 자다가 눈을 떴는데 갑자기 조선시대 왕이라면?</p>
+        <p>
+            <input type="radio" name="firstmeet" value="1">날 따라다니는 내시들과 궁녀들이 익숙하지 않다... 일단 조용히 상황을 파악한다.<br><br>
+            <input type="radio" name="firstmeet" value="2">이상하긴 하지만 궁 이곳저곳 돌아다니면서 신하들에게 궁금한걸 묻는다!<br>
+        </p>
+        <br>
+        <br>
+        <p class="q">2. 당신이 왕이라면 어떤 신하가 좋은가요?</p>
+        <p>
+            <input type="radio" name="servant" value="1">기발하고 영특하며 상상력이 풍부한 신하가 좋다.<br><br>
+            <input type="radio" name="servant" value="2">상식이 풍부하고 실제적이며 현실적인 신하가 좋다.<br>
+        </p>
+        <br>
+        <br>
+        <p class="q">3. 만약에 여행을 가고싶다면?</p>
+        <p>
+            <input type="radio" name="travel" value="1">밤에 몰래 아끼는 무사와 신하만 데리고 잠행을 나간다.<br><br>
+            <input type="radio" name="travel" value="2">멀리까지 가려면 돈과 말이나 마차가 필요해. 모든 것을 준비하고 출발한다.<br>
+        </p>
+        <br>
+        <br>
+        <p class="q">4. 요새 민심이 흉흉한 먼 마을에 암행어사를 보냈는데, 그가 보고를 하러 왔다.</p>
+        <p>
+            <input type="radio" name="choice" value="1">고생했다. 그곳에 민심이 흉흉한 이유는 알아냈느냐? 무엇이 문제였느냐?<br><br>
+            <input type="radio" name="choice" value="2">먼 길 다녀오느라 그동안 고생 많았다ㅠㅠ 어땠니?<br>
+        </p>
+        <br>
+        <br>
+        <p id="end"><a href = "javascript:check()" >결과보기</a></p>
+        <p><a href="testst.html">다시하기</a></p>
+    </form>
+</body>
+</html>

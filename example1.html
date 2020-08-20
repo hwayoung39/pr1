@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>선택에 따른 페이지 이동</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script language="javascript">
+    function check(){
+        var form = document.form1;
+        if(form.ex[0].checked == true){
+             form.action="menu_1.html";
+        }
+        else if(form.ex[1].checked == true){
+            form.action = "menu_2.html";
+        }
+        else{
+            form.action = "menu_3.html";
+        }
+        form.submit();
+    }
+    </script>
+
+</head>
+<body backgroundcolor="#ffffff">
+    <form name="form1" method="post" >
+        <input type = "radio" name="ex" value="1" checked> 선택1
+        <input type = "radio" name="ex" value="2" checked> 선택2
+        <input type = "radio" name="ex" value="3" checked> 선택3
+        &nbsp;&nbsp; <a href = "javascript:check()">확인</a>
+    </form>
+</body>
+</html>
